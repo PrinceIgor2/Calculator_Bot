@@ -20,7 +20,7 @@ def get_message(update: Update, context: CallbackContext):
 def help_command(update: Update, context: CallbackContext):
     message = update.message.text
     print(message)
-    update.message.reply_text(f'/hello\n/time\n/help\n/sum - сумма двух чисел\n/sub - разность двух чисел\n/prod - умножение двух чисел\n/div - деление двух чисел\n\nВведите через пробел команду и числа(десятичный разделитель - .)!\n/joke - анекдот(на любителя)')
+    update.message.reply_text(f'/hello\n/help\n/sum - сложение\n/sub - вычитание\n/prod - умножение\n/div - деление\n\nВведи через пробел команду и числа(разделитель вещественного числа - точка)!\n/joke - анекдот(на любителя)')
 
 def summation_command(update: Update, context: CallbackContext):
     message = update.message.text
