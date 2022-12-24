@@ -9,10 +9,10 @@ dispatcher = updater.dispatcher
 start_handler = CommandHandler('start', help_command)
 help_handler = CommandHandler('help', help_command)
 hello_handler = CommandHandler('hello', hello_command)
-summation_handler = CommandHandler('sum', summation_command)
-substraction_handler = CommandHandler('sub', substraction_command)
-multiplication_handler = CommandHandler('prod', multiplication_command)
-division_handler = CommandHandler('div', division_command)
+summation_handler = CommandHandler('summation', summation_command)
+substraction_handler = CommandHandler('substraction', substraction_command)
+multiplication_handler = CommandHandler('multiplication', multiplication_command)
+division_handler = CommandHandler('division', division_command)
 joke_handler = CommandHandler('joke', get_joke)
 
 
@@ -26,7 +26,6 @@ dispatcher.add_handler(substraction_handler)
 dispatcher.add_handler(multiplication_handler)
 dispatcher.add_handler(division_handler)
 dispatcher.add_handler(joke_handler)
-
 
 
 dispatcher.add_handler(message_handler)
